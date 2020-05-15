@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+:root {
+  --light-gray: #e8e7e7;
+  --dark-gray: #b3b3b3;
+  --darker-gray: #949493;
+  --button-hover: #ea615d;
+  --button: #f2403a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+a {
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  font-size: 1rem;
+  padding: 5px 10px 5px 0;
+  margin-left: 5px;
+  border-bottom: 1px solid var(--dark-gray);
+  outline: none;
+}
+.form-inline input{
+  position: relative;
+  bottom: 97px;
+  left: 430px;
+
+}
+::placeholder {
+  color: var(--light-gray);
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: var(--button);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+.dots {
+  display: flex;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background: var(--dark-gray);
+}
+
+.dot:nth-child(2) {
+  margin: 0 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 30px;
+}
+
+.navbar .container {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.navbar ul {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li {
+  padding: 0 20px;
+}
+
+.navbar ul li a:hover {
+  color: #000;
+}
+.dropdown .dropdown-menu{
+  z-index: 5;
+}
+/* .dropdown-menu:hover{
+  background-color: #fff;
+} */
+.section-a {
+  height: 700px;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  border-bottom: 1px solid var(--light-gray);
+}
+.section-a p, 
+.section-a h5,
+::-moz-selection{
+    color: #fff;
+    /* text-shadow: 3px 6px 7px #000000; */
+    background-color: black;
+}
+
+.section-c .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.section-b {
+  height: 100%;
+}
+
+.section-c p,
+.section-d p {
+  color: var(--dark-gray);
+  padding-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border-left: 2px solid var(--light-gray);
+}
+
+/* .section-b, */
+.section-c {
+  margin-bottom: 50px;
+}
+
+.section-c .container img {
+  width: 100%;
+}
+
+.section-d {
+  background: url("https://www.apple.com/id/watch/home/images/overview/music/tile_apple-music__bjepbggvosmu_large.jpg") no-repeat center/cover;
+  height: 700px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.section-d .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.section-d p {
+  color: #fff;
+  border-left: 2px solid #fff;
+}
+
+.section-d h1 {
+  color: #fff;
+}
+
+@media (max-width: 1440px) {
+
+}
+
